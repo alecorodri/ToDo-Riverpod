@@ -38,6 +38,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   #mobile_number: ^1.0.4
   geolocator: ^8.2.1
+  flutter_riverpod: ^1.0.4
 
 dev_dependencies:
   flutter_test:
