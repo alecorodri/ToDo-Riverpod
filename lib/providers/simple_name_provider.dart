@@ -1,5 +1,5 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-final simpleNameProviderProvider = Provider<String>((ref) {
+final simpleNameProviderProvider = Provider.autoDispose<String>((ref) {
   return 'Aleco Dev';
 });
