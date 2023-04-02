@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/providers/providers.dart';
+import 'package:flutter_application_1/routers/routers.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 // class ProviderPage extends ConsumerWidget {
@@ -33,7 +34,13 @@ class ProviderPageState extends ConsumerState<ProviderPage> {
     return Scaffold(
       appBar: AppBar(
         title: const Center(child: Text('ToDos')),
-        actions: [IconButton(onPressed: () {}, icon: const Icon(Icons.done))],
+        actions: [
+          IconButton(
+              onPressed: () {
+                ref.read(routersProvider).goNamed('done');
+              },
+              icon: const Icon(Icons.done))
+        ],
       ),
       body: Center(child: Text(name)),
       drawer: const Drawer(),
