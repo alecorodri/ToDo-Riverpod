@@ -11,7 +11,7 @@ class MyApp extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final routers = ref.watch(routersProvider);
     return MaterialApp.router(
-      title: 'ToDO Riverpod',
+      title: 'ToDo Riverpod',
       theme: ThemeData(primarySwatch: Colors.blueGrey),
       routerConfig: routers,
     );
